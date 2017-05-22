@@ -1,0 +1,577 @@
+/********** Fuente Muli-Regular **********/
+
+@font-face {
+  font-family: 'Muli-Regular';
+  src: url('../fuentes/Muli-Regular.eot');
+  src: url('../fuentes/Muli-Regular.woff2') format('woff2'),
+       url('../fuentes/Muli-Regular.eot?#iefix') format('embedded-opentype'),
+       url('../fuentes/Muli-Regular.woff') format('woff'),
+       url('../fuentes/Muli-Regular.ttf') format('truetype'),
+       url('../fuentes/Muli-Regular.svg#Muli-Regular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Muli-light';
+  src: url('../fuentes/Muli-light.eot');
+  src: url('../fuentes/Muli-light.woff2') format('woff2'),
+       url('../fuentes/Muli-light.eot?#iefix') format('embedded-opentype'),
+       url('../fuentes/Muli-light.woff') format('woff'),
+       url('../fuentes/Muli-light.ttf') format('truetype'),
+       url('../fuentes/Muli-light.svg#Muli-light') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/********** Fuente Montserrat-Regular **********/
+@font-face {
+  font-family: 'Montserrat-regular';
+  src: url('../fuentes/Montserrat-regular.eot');
+  src: url('../fuentes/Montserrat-regular.woff2') format('woff2'),
+       url('../fuentes/Montserrat-regular.woff') format('woff'),
+       url('../fuentes/Montserrat-regular.ttf') format('truetype'),
+       url('../fuentes/Montserrat-regular.svg#Montserrat-regular') format('svg'),
+       url('../fuentes/Montserrat-regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/********** Fuente Montserrat-Bold **********/
+@font-face {
+  font-family: 'Montserrat-Bold';
+  src: url('../fuentes/Montserrat-Bold.eot');
+  src: url('../fuentes/Montserrat-Bold.woff2') format('woff2'),
+       url('../fuentes/Montserrat-Bold.woff') format('woff'),
+       url('../fuentes/Montserrat-Bold.ttf') format('truetype'),
+       url('../fuentes/Montserrat-Bold.svg#Montserrat-Bold') format('svg'),
+       url('../fuentes/Montserrat-Bold.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/********** Fuente BadScript-Regular **********/
+@font-face {
+  font-family: 'BadScript-Regular';
+  src: url('../fuentes/BadScript-Regular.eot');
+  src: url('../fuentes/BadScript-Regular.woff2') format('woff2'),
+       url('../fuentes/BadScript-Regular.woff') format('woff'),
+       url('../fuentes/BadScript-Regular.ttf') format('truetype'),
+       url('../fuentes/BadScript-Regular.svg#BadScript-Regular') format('svg'),
+       url('../fuentes/BadScript-Regular.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/********** Fuente NexaRustSans-Black **********/
+@font-face {
+  font-family: 'NexaRustSans-Black';
+  src: url('../fuentes/NexaRustSans-Black.eot');
+  src: url('../fuentes/NexaRustSans-Black.woff2') format('woff2'),
+       url('../fuentes/NexaRustSans-Black.woff') format('woff'),
+       url('../fuentes/NexaRustSans-Black.ttf') format('truetype'),
+       url('../fuentes/NexaRustSans-Black.svg#NexaRustSans-Black') format('svg'),
+       url('../fuentes/NexaRustSans-Black.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+/********** Fuente NexaRustSans-Black **********/
+@font-face {
+  font-family: 'proxima-nova-black';
+  src: url('../fuentes/proxima-nova-black.eot');
+  src: url('../fuentes/proxima-nova-black.woff2') format('woff2'),
+       url('../fuentes/proxima-nova-black.woff') format('woff'),
+       url('../fuentes/proxima-nova-black.ttf') format('truetype'),
+       url('../fuentes/proxima-nova-black.svg#proxima-nova-black') format('svg'),
+       url('../fuentes/proxima-nova-black.eot?#iefix') format('embedded-opentype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+.mul-light {
+  font-family: 'Muli-light', sans-serif;
+}
+.mul-regular {
+  font-family: 'Muli-Regular', sans-serif;
+}
+.mon-regular {
+  font-family: 'Montserrat-regular', sans-serif;
+}
+.mon-bold {
+  font-family: 'Montserrat-Bold', sans-serif;
+}
+.badscript {
+  font-family: 'BadScript-Regular', sans-serif;
+}
+.nexa {
+  font-family: 'NexaRustSans-Black', sans-serif;
+}
+.nova {
+  font-family: 'proxima-nova-black', sans-serif;
+}
+
+
+body {
+    width: 100%;
+    height: 100%;
+    color: #58585b;
+}
+
+html {
+    width: 100%;
+    height: 100%;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Montserrat-regular', sans-serif;
+}
+
+p {
+    font-family: 'Muli-Regular', sans-serif;
+}
+
+hr {
+  border: solid 1px #e0e0e0;
+}
+
+.space {
+    padding: 40px 40px 0;
+}
+
+/********** BOTONES **********/
+
+.btn-primario {
+    background: #fff;
+    border: solid 1px #07939e;
+    width: 115px;
+}
+
+.btn-primario:hover {
+    color: #58585b;
+}
+
+.btn-principal {
+    background: #07939e;
+    color: #fff;
+    width: 115px;
+}
+
+.btn-principal:hover {
+    color: #fff;
+}
+
+.btn-secundario {
+    background: #f58622;
+    color: #fff;
+    width: 115px;
+}
+
+.btn-secundario:hover {
+    color: #fff;
+}
+
+
+/********** CSS MENU **********/
+
+.navbar {
+    background: #fff !important;
+    border-bottom: none !important;
+    font-family: 'Muli-light', sans-serif;
+    font-size: 14px;
+    padding: 30px 0;
+}
+
+.navbar-brand {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    align-items: center;
+}
+
+/********** CSS HEAD RESERVACIONES **********/
+
+#reservacion {
+    background: #fff;
+    background-image:url(../img/home/calendario-bg.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    height: 600px;
+    width: 100%;
+}
+
+#shadow {
+    background: rgba(0,0,0,.5);
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    align-items: center;
+    height: 100px;
+    margin-top: 500px;
+    position: absolute;
+    width: 100%;
+}
+
+.box-cal {
+    background: #fff;
+    border: solid 1px #07939e;
+    color: #07939e;
+    font-size: 16px;
+    height: 60px;
+    padding: 5px 15px;
+}
+
+.ali {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.green {
+    background: #07939e;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    align-items: center;
+    color: #fff;
+}
+
+.green h3 {
+    font-size: 20px;
+}
+
+input.cal {
+    border: none;
+    color: #a7a9ab;
+    display: block;
+    font-family: 'Muli-light', sans-serif;
+    font-size: 14px;
+    margin-top: -5px;
+}
+
+input.cal:focus {
+    color: #a7a9ab;
+    font-family: 'Muli-light', sans-serif;
+    font-size: 14px;
+}
+
+input.cal::-webkit-input-placeholder {
+  color: #a7a9ab;
+  font-size: 14px;
+}
+input.cal:-moz-placeholder {
+  color: #a7a9ab; 
+  font-size: 14px;
+}
+input.cal:-ms-input-placeholder { 
+  color: #a7a9ab; 
+  font-size: 14px;
+}
+
+
+/********** CSS VACACIONES **********/
+
+.vacaciones {
+  padding-bottom: 20px;
+}
+
+.vacaciones h2 {
+    color: #f58622;
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 48px;
+}
+
+.vacaciones h3 {
+    font-size: 24px;
+    padding-left: 40px;
+}
+
+.vacaciones p {
+    font-size: 18px;
+    padding-left: 40px;
+}
+
+.vac{
+  margin-top: 20px;
+}
+
+.img-vac img {
+    border-radius: 10px 10px 0 0;
+    -moz-border-radius: 10px 10px 0 0;
+    -webkit-border-radius: 10px 10px 0 0;
+    width: 100%;
+}
+
+.text-vac { /* FF3.6-15 */
+    background: -webkit-linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 100%);
+    background: -o-linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 100%);
+    background: linear-gradient(rgba(0,0,0,0) 0%, rgba(0,0,0,0.3) 100%); /* Chrome10-25,Safari5.1-6 */ /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00000000', endColorstr='#4d000000',GradientType=0 ); /* IE6-9 */
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    align-items: center;
+    height: 60px;
+    margin-top: -60px;
+    position: relative;
+    z-index: 1;
+}
+
+.text-vac h3 {
+    color:#fff;
+    font-family: 'NexaRustSans-Black', sans-serif;
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+
+/********** CSS PROMOCIONES **********/
+
+.promociones {
+  padding-bottom: 20px;
+}
+
+.promociones h2 {
+  color: #f58522;
+  font-size: 36px;
+}
+
+.promo{
+  margin-top: 20px;
+}
+
+.img-promo img {
+    width: 100%;
+}
+
+.pleca-promo {
+    background: #28303a;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.pleca-promo p {
+    color: #fff;
+    font-family: 'Muli-light', sans-serif;
+    font-size: 10px;
+    margin-top: 15px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.promo-circle { 
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    justify-content: center;
+}
+
+.circle-promo { 
+    background: #f58522;
+    -moz-border-radius: 50px;
+    -webkit-border-radius: 50px;
+    border-radius: 50px;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    margin-top: -130px;
+    position: absolute;
+    text-align: center;
+    width: 100px;
+    z-index: 1;
+    -webkit-box-shadow: 3px 3px 10px 0 rgba(0,0,0,.7);
+    -moz-box-shadow: 3px 3px 10px 0 rgba(0,0,0,.7);
+    box-shadow: 3px 3px 10px 0 rgba(0,0,0,.7);
+}
+
+.circle-promo p { /* FF3.6-15 */
+    color: #fff;
+    font-size: 12px;
+    line-height: 16px;
+    padding: 10px;
+}
+
+.circle-promo span { /* FF3.6-15 */
+    font-size: 23px;
+}
+
+
+.text-promo { 
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    align-items: center;
+    position: relative;
+    margin-top: 5px;
+}
+
+.text-promo h3 {
+    color:#fff;
+    font-family: 'NexaRustSans-Black', sans-serif;
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+.arrow {
+  position: absolute;
+  margin: -300px 0 0 1110px;
+}
+
+
+/********** CSS RECOMENDADOS **********/
+
+.recomendados {
+  background: rgb(255,255,255); /* Old browsers */
+  background: -moz-linear-gradient(top, rgba(255,255,255,1) 0%, rgba(255,255,255,0.97) 15%, rgba(147,191,203,0.8) 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, rgba(255,255,255,1) 0%,rgba(255,255,255,0.97) 15%,rgba(147,191,203,0.8) 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, rgba(255,255,255,1) 0%,rgba(255,255,255,0.97) 15%,rgba(147,191,203,0.8) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ffffff', endColorstr='#cc93bfcb',GradientType=0 ); /* IE6-9 */
+  padding-bottom: 30px;
+}
+
+.recomendados h2 {
+  color: #74adb7;
+  font-size: 36px;
+}
+
+.recom{
+  margin-top: 20px;
+}
+
+.img-recom {
+    background: #fff;
+}
+
+.img-recom img {
+    margin: auto;
+    padding: 10px 10px 0;
+    width: 100%;
+}
+
+.text-recom {
+    background: #fff;
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    position: relative;
+    z-index: 1;
+}
+
+.text-recom h3 {
+    font-family: 'Montserrat-Bold', sans-serif;
+    font-size: 20px;
+    text-align: center;
+    text-transform: uppercase;
+    padding-bottom: 10px;
+}
+
+.arrow2 {
+  position: absolute;
+  margin: -170px 0 0 1110px;
+}
+
+
+/********** CSS DESTACADOS **********/
+
+.destacados {
+  padding-bottom: 20px;
+}
+
+.destacados h2 {
+  font-size: 36px;
+}
+
+.des{
+  margin-top: 20px;
+}
+
+.img-des img {
+    width: 100%;
+}
+
+.text-des { 
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    align-items: center;
+    position: relative;
+    margin-top: 5px;
+}
+
+.text-des h3 {
+    color:#fff;
+    font-family: 'NexaRustSans-Black', sans-serif;
+    font-size: 20px;
+    padding: 0 20px;
+}
+
+.arrow3 {
+  position: absolute;
+  margin: -230px 0 0 1110px;
+}
+
+
+/********** CSS EXPERIENCIAS **********/
+
+.experiencias {
+  padding-bottom: 20px;
+}
+
+.experiencias h2 {
+  font-size: 36px;
+}
+
+.exp{
+  margin-top: 20px;
+}
+
+.img-exp img {
+    width: 100%;
+}
+
+
+/********** CSS FOOTER **********/
+
+.footer-top {
+    display: flex;
+    display: -webkit-flex;
+    display: -ms-flex;
+    align-items: center;
+    justify-content: space-between;
+    height: 100px;
+}
+
+.foot li {
+  list-style: none;
+  display: inline-block;
+  padding-right: 40px;
+}
+
+.foot a {
+  color: #808184;
+}
+
+.foot a:hover {
+  color: #808184;
+  text-decoration: none;
+}
+
+.logo-foot img {
+  width: 70%;
+}
