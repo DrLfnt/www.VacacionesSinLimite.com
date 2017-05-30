@@ -607,14 +607,35 @@ input.cal:-ms-input-placeholder {
 			border: 0px solid transparent;
 		}
 		.navbar {
-		    padding: 10px 0;
+			padding: 10px 0;
 		}
-		.banner-xs-sm {
+		.box {
+			background-color: rgba(255,255,255,0.75);
+			border-radius: 3%;
 			position: relative;
-    		top: 70px;
+			top: -372px;
+			z-index: 1;
+			margin-top: 50px;
+			padding-top: 10px;
+			padding-bottom: 10px;
+		}
+		.box-cal {
+			background: #fff;
+			border: solid 1px #07939e;
+			color: #07939e;
+			font-size: 14px;
+			margin: 0 auto;
+			margin-bottom: 5px;
+			width: 85%;
+			position: relative;
+			top: 0;
+			z-index: 2;
 		}
 		.space {
 			padding: 70px 10px 0px;
+		}
+		.space-xs {
+			padding-top: 20px !important;
 		}
 		.vacaciones h2 {
 			font-size: 30px;
@@ -635,6 +656,38 @@ input.cal:-ms-input-placeholder {
 		.text-vac h3 {
 			font-size: 16px;
 			padding: 0 20px;
+		}
+		.badscript {
+			margin-top: 0;
+			margin-bottom: 0;
+		}
+		.padding-destinos {
+			padding: 5px;
+		}
+		.text-recom h3 {
+			font-size: 75%;
+		}
+		.foot {
+			padding-left: 0;
+			margin-left: 0;
+		}
+		.foot li {
+			list-style: none;
+			margin-top: 15px;
+			margin-bottom: 15px;
+			display: inline-block;
+			padding: 0;
+			font-weight: 300 !important;
+		}
+		.foot li a {
+			font-weight: lighter !important;
+		}
+		.logo-foot {
+			max-width: 75%;
+		}
+		.logo-foot img {
+			max-width: 75%;
+			margin-left: -20px;
 		}
 	}
 
