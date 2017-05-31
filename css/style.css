@@ -496,7 +496,7 @@
 	}
 
 /********** Nav Media Queries **********/
-@media (min-width: 480px) {
+@media (max-width: 479px) {
 	.navbar {
 		border-radius: 4px;
 	}
@@ -504,7 +504,7 @@
 		display: none;
 	}
 }
-@media (min-width: 480px) {
+@media (min-width: 479px) {
 	.navbar-header {
 		float: left;
 	}
@@ -521,7 +521,7 @@
 .navbar-collapse.in {
 	overflow-y: auto;
 }
-@media (min-width: 480px) {
+@media (min-width: 479px) {
 	.navbar-collapse {
 		width: auto;
 		border-top: 0;
@@ -548,7 +548,7 @@
 .navbar-fixed-bottom .navbar-collapse {
 	max-height: 340px;
 }
-@media (max-device-width: 480px) and (orientation: landscape) {
+@media (max-device-width: 479px) and (orientation: landscape) {
 	.navbar-fixed-top .navbar-collapse,
 	.navbar-fixed-bottom .navbar-collapse {
 		max-height: 200px;
