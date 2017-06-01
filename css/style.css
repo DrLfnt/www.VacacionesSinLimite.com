@@ -272,6 +272,44 @@
 		width: 100%;
 	}
 
+/********** CSS VACACIONES XS SM **********/
+	.vacaciones-xs-sm {
+		padding: 1em 1em 0 1em;
+		margin-top: -1em;
+
+	}
+	.vacaciones-xs-sm h2 {
+		color: #f58622;
+		font-family: 'Montserrat-Bold', sans-serif;
+		font-size: 2.5em;
+		margin-bottom: .1em;
+	}
+	.vacaciones-xs-sm h3 {
+		margin-top: .5em;
+		font-size: 1.5em;
+	}
+	.vacaciones-xs-sm p {
+		margin-top: 1.5em;
+		font-size: 1em;
+		font-weight: bold;
+	}
+	.vac-xs-sm{
+		margin-top: 20px;
+	}
+	.img-vac-xs-sm {
+		border-radius: 10px 10px 0 0;
+		-moz-border-radius: 10px 10px 0 0;
+		-webkit-border-radius: 10px 10px 0 0;
+		padding: 0 .5em;
+	}
+	.vac-col-12-xs-sm {
+		margin-bottom: 1em;
+	}
+	.vac-col-6-xs-sm-no-padd {
+		padding-left: 0;
+		padding-right: 0;
+	}
+
 /********** CSS PROMOCIONES **********/
 	.promociones {
 		padding-bottom: 20px;
@@ -411,12 +449,32 @@
 		#shadow {
 			background: transparent;
 		}
+		.no-space {
+			padding-top: 0!important;
+			padding-right: 1!important;
+			padding-bottom: 0!important;
+			padding-left: 1!important;
+			margin: 0!important;
+		}
+		.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+		    background-color: transparent;
+		}
 	}
 
 	/* Extra Small Devices, Phones */ 
 	@media only screen and (max-width : 480px) {
 		#shadow {
 			background: transparent;
+		}
+		.no-space {
+			padding-top: 0!important;
+			padding-right: 1!important;
+			padding-bottom: 0!important;
+			padding-left: 1!important;
+			margin: 0!important;
+		}
+		.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+		    background-color: transparent;
 		}
 	}
 
@@ -496,7 +554,7 @@
 	}
 
 /********** Nav Media Queries **********/
-@media (max-width: 479px) {
+@media (min-width: 480px) {
 	.navbar {
 		border-radius: 4px;
 	}
@@ -504,7 +562,7 @@
 		display: none;
 	}
 }
-@media (min-width: 479px) {
+@media (min-width: 480px) {
 	.navbar-header {
 		float: left;
 	}
@@ -521,7 +579,7 @@
 .navbar-collapse.in {
 	overflow-y: auto;
 }
-@media (min-width: 479px) {
+@media (min-width: 480px) {
 	.navbar-collapse {
 		width: auto;
 		border-top: 0;
@@ -548,7 +606,7 @@
 .navbar-fixed-bottom .navbar-collapse {
 	max-height: 340px;
 }
-@media (max-device-width: 479px) and (orientation: landscape) {
+@media (max-device-width: 480px) and (orientation: landscape) {
 	.navbar-fixed-top .navbar-collapse,
 	.navbar-fixed-bottom .navbar-collapse {
 		max-height: 200px;
