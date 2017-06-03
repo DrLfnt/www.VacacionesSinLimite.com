@@ -45,17 +45,72 @@
                 <a class="logo" href=""><img class="img-responsive" src="img/logo.png" alt="logo"></a>
             </div>
             <ul>
-                <li class="li-menu"><a href="#">Iniciar sesión</a></li>
-                <li class="li-menu2"><a href="#">Registro</a></li>
+                <li class="li-menu"><a href="#" data-modal-id="popup1">Iniciar sesión</a></li>
+                <li class="li-menu2"><a href="#" data-modal-id="popup2">Registro</a></li>
                 <li class="li-menu4"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i> Conectar con facebook</a></li>
-                <li class="li-menu3"><a href="#">Contacto</a></li>
+                <li class="li-menu3"><a href="contacto.html">Contacto</a></li>
             </ul>
         </nav>
     </header>
 
-    <!--Cargador-->
-    <div class="preloader"> <i class="fa fa-circle-o-notch fa-spin"></i></div>
-  <!--/.Cargador-->
+    <div id="popup1" class="modal-box">
+        <header> <a href="#" class="js-modal-close close">×</a>
+        </header>
+        <div class="modal-body">
+            <form class="formulario" method="post">
+                <div class="input-group forms">
+                    <span class="input-group-addon addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+                    <input class="form-control" type="text" placeholder="Usuario">
+                </div>
+                <div class="input-group forms">
+                    <span class="input-group-addon addon"><i class="fa fa-key fa-fw"></i></span>
+                    <input class="form-control" type="password" placeholder="Contraseña">
+                </div>
+                <div class="forms">
+                    <a class="btn btn-default btn-block boton-f" href="#"><i class="fa fa-facebook" aria-hidden="true"></i> Conectar con facebook</a>
+                </div>
+                <div class="forms" style="padding: 10px 0;">
+                    <input id="box1" type="checkbox" />
+                    <label for="box1">Recordarme</label>
+                    <a class="btn enlace pull-right" href="#">Olvidé mi contraseña</a>
+                </div>
+                <div class="clearfix"></div>
+                <div class=" orms">
+                    <a class="btn btn-default btn-block boton" href="#">Iniciar sesión</a>
+                </div>
+                <hr>
+                <div class="forms">
+                    <p class="p-inline">Si no tienes una cuenta</p>
+                    <a class="btn btn-default boton pull-right" href="#">Registrate aquí</a>
+                    <div class="clearfix"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="popup2" class="modal-box">
+        <header> <a href="#" class="js-modal-close close">×</a>
+        </header>
+        <div class="modal-body">
+            <form class="formulario" method="post">
+                <div class="forms">
+                    <p>Para tu registro es necesario llenar el siguiente campo:</p>
+                </div>
+                <div class="input-group forms">
+                    <span class="input-group-addon addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+                    <input class="form-control" type="text" placeholder="Correo electrónico">
+                </div><div class="forms">
+                    <a class="btn btn-default boton pull-right" style="padding: 5px 30px;" href="#">Enviar</a>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="forms2">
+                    <p class="p-inline">Busca en tu buzón de entrada el correo para completar tu registro.</p>
+                    <i class="fa fa-envelope-o pull-right" aria-hidden="true"></i>
+                    <div class="clearfix"></div>
+                </div>
+            </form>
+        </div>
+    </div>
 
 
 <!-- Slider -->
@@ -143,8 +198,8 @@
         </div>
     </section>
 
-    <section class="promociones">
-        <div class="container space">
+    <section class="promociones visible-lg visible-md">
+        <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <h2 class="badscript">Promociones</h2>
@@ -191,8 +246,56 @@
         </div>
     </section>
 
+    <section class="promociones visible-sm visible-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="badscript">Promociones</h2>
+                </div>
+            </div>
+            <div class="row in-use-carousel" data-flickity="{ &quot;lazyLoad&quot;: 1, &quot;wrapAround&quot;: true, &quot;groupCells&quot;: true }">
+                <div class="col-md-3">
+                    <a class="in-use-carousel__item" href="">
+                      <img class="in-use-carousel__item__image img-promo" data-flickity-lazyload="img/home/promociones/promocion-tb-01.jpg" alt="">
+                      <p class="in-use-carousel__item__title">Sed everti animal virtute ea. Soluta quidam et quo epicurei perpetua gloriatur.</p>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a class="in-use-carousel__item" href="">
+                      <img class="in-use-carousel__item__image img-promo" data-flickity-lazyload="img/home/promociones/promocion-tb-02.jpg" alt="">
+                      <p class="in-use-carousel__item__title">Sed everti animal virtute ea. Soluta quidam et quo epicurei perpetua gloriatur.</p>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a class="in-use-carousel__item" href="">
+                      <img class="in-use-carousel__item__image img-promo" data-flickity-lazyload="img/home/promociones/promocion-tb-01.jpg" alt="">
+                      <p class="in-use-carousel__item__title">Sed everti animal virtute ea. Soluta quidam et quo epicurei perpetua gloriatur.</p>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a class="in-use-carousel__item" href="">
+                      <img class="in-use-carousel__item__image img-promo" data-flickity-lazyload="img/home/promociones/promocion-tb-02.jpg" alt="">
+                      <p class="in-use-carousel__item__title">Sed everti animal virtute ea. Soluta quidam et quo epicurei perpetua gloriatur.</p>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a class="in-use-carousel__item" href="">
+                      <img class="in-use-carousel__item__image img-promo" data-flickity-lazyload="img/home/promociones/promocion-tb-01.jpg" alt="">
+                      <p class="in-use-carousel__item__title">Sed everti animal virtute ea. Soluta quidam et quo epicurei perpetua gloriatur.</p>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a class="in-use-carousel__item" href="">
+                      <img class="in-use-carousel__item__image img-promo" data-flickity-lazyload="img/home/promociones/promocion-tb-02.jpg" alt="">
+                      <p class="in-use-carousel__item__title">Sed everti animal virtute ea. Soluta quidam et quo epicurei perpetua gloriatur.</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section class="recomendados">
-        <div class="container space">
+        <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <h2 class="badscript">Destinos recomendados</h2>
@@ -233,7 +336,7 @@
         </div>
     </section>
 
-    <section class="destacados">
+    <section class="destacados visible-lg visible-md">
         <div class="container">
             <div class="row">
                 <div class="col-md-12">
@@ -280,9 +383,57 @@
             </div>
         </div>
     </section>
+    
+    <section class="destacados visible-sm visible-xs">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <h2 class="badscript">Fechas destacadas</h2>
+                </div>
+            </div>
+            <div class="row in-use-carousel" data-flickity="{ &quot;lazyLoad&quot;: 1, &quot;wrapAround&quot;: true, &quot;groupCells&quot;: true }">
+                <div class="col-md-3">
+                    <a class="in-use-carousel__item" href="">
+                      <img class="in-use-carousel__item__image img-des" data-flickity-lazyload="img/home/destacados/destacado-tb-01.jpg" alt="">
+                      <p class="in-use-carousel__item__title">Celebra el comienzo de un nuevo año en tu lugar favorito. Reserva hoy mismo el mejor destino.</p>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a class="in-use-carousel__item" href="">
+                      <img class="in-use-carousel__item__image img-des" data-flickity-lazyload="img/home/destacados/destacado-tb-02.jpg" alt="">
+                      <p class="in-use-carousel__item__title">Consiente a tu pareja en un lugar romántico, en un hotel donde ambos puedan disfrutarse.</p>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a class="in-use-carousel__item" href="">
+                      <img class="in-use-carousel__item__image img-des" data-flickity-lazyload="img/home/destacados/destacado-tb-01.jpg" alt="">
+                      <p class="in-use-carousel__item__title">Dale a mamá la mejor sorpresa que le muestre el agradecimiento y amor de este día..</p>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a class="in-use-carousel__item" href="">
+                      <img class="in-use-carousel__item__image img-des" data-flickity-lazyload="img/home/destacados/destacado-tb-02.jpg" alt="">
+                      <p class="in-use-carousel__item__title">Festeja las fiestas patrias de una manera original. Reserva el hotel perfecto para esta celebración.</p>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a class="in-use-carousel__item" href="">
+                      <img class="in-use-carousel__item__image img-des" data-flickity-lazyload="img/home/destacados/destacado-tb-01.jpg" alt="">
+                      <p class="in-use-carousel__item__title">Consiente a tu pareja en un lugar romántico, en un hotel donde ambos puedan disfrutarse.</p>
+                    </a>
+                </div>
+                <div class="col-md-3">
+                    <a class="in-use-carousel__item" href="">
+                      <img class="in-use-carousel__item__image img-des" data-flickity-lazyload="img/home/destacados/destacado-tb-02.jpg" alt="">
+                      <p class="in-use-carousel__item__title">Dale a mamá la mejor sorpresa que le muestre el agradecimiento y amor de este día..</p>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
 
     <section class="experiencias">
-        <div class="container space">
+        <div class="container">
             <div class="row">
                 <div class="col-md-12">
                     <hr>
@@ -367,51 +518,12 @@
     
     <!-- Menu JavaScript -->
     <script src="js/menu.js"></script>
-    <script type="text/javascript">
-        $(document).ready(main);
- 
-        var contador = 1;
-         
-        function main () {
-            $('.menu').click(function(){
-                if (contador == 1) {
-                    $('nav').animate({
-                        left: '0'
-                    });
-                    contador = 0;
-                } else {
-                    contador = 1;
-                    $('nav').animate({
-                        left: '-100%'
-                    });
-                }
-            });
-        }
-    </script>
-    
-    <!-- Slider JavaScript -->
-    <script type="text/javascript">
-        jQuery(function($) {
-
-        //Preloader
-        var preloader = $('.preloader');
-        $(window).load(function(){
-            preloader.remove();
-        });
-
-        //#main-slider
-        var slideHeight = $(window).height();
-        $('#home-slider .item').css('height',slideHeight);
-
-        $(window).resize(function(){'use strict',
-            $('#home-slider .item').css('height',slideHeight);
-        });
-        
-    });
-    </script>
     
     <!-- Carousel JavaScript -->
     <script src="js/flickity-docs.min.js"></script>
+
+    <!-- Varios JavaScript -->
+    <script src="js/main.js"></script>
 
 
 </body>

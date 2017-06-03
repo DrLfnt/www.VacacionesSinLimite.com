@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <title>Contacto | Vacaciones sin límite</title>
+    <!-- Bootstrap CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- FontAwesome -->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <!-- Custom CSS -->
+    <link href="css/style.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/flickity-docs.css" media="screen">
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+        <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+    <script src='https://www.google.com/recaptcha/api.js'></script>
+
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <header>
+        <div class="menu_bar">
+            <a href="#" class="bt-menu"><img class="img-responsive" src="img/logo.png" width="200" alt="logo"></a>
+            <i class="fa fa-bars menu" aria-hidden="true"></i>
+        </div>
+ 
+        <nav>
+            <div class="navbar-brand">
+                <a class="logo" href=""><img class="img-responsive" src="img/logo.png" alt="logo"></a>
+            </div>
+            <ul>
+                <li class="li-menu"><a href="#" data-modal-id="popup1">Iniciar sesión</a></li>
+                <li class="li-menu2"><a href="#" data-modal-id="popup2">Registro</a></li>
+                <li class="li-menu4"><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i> Conectar con facebook</a></li>
+                <li class="li-menu3"><a href="contacto.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <div id="popup1" class="modal-box">
+        <header> <a href="#" class="js-modal-close close">×</a>
+        </header>
+        <div class="modal-body">
+            <form class="formulario" method="post">
+                <div class="input-group forms">
+                    <span class="input-group-addon addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+                    <input class="form-control" type="text" placeholder="Usuario">
+                </div>
+                <div class="input-group forms">
+                    <span class="input-group-addon addon"><i class="fa fa-key fa-fw"></i></span>
+                    <input class="form-control" type="password" placeholder="Contraseña">
+                </div>
+                <div class="forms">
+                    <a class="btn btn-default btn-block boton-f" href="#"><i class="fa fa-facebook" aria-hidden="true"></i> Conectar con facebook</a>
+                </div>
+                <div class="forms" style="padding: 10px 0;">
+                    <input id="box1" type="checkbox" />
+                    <label for="box1">Recordarme</label>
+                    <a class="btn enlace pull-right" href="#">Olvidé mi contraseña</a>
+                </div>
+                <div class="clearfix"></div>
+                <div class=" orms">
+                    <a class="btn btn-default btn-block boton" href="#">Iniciar sesión</a>
+                </div>
+                <hr>
+                <div class="forms">
+                    <p class="p-inline">Si no tienes una cuenta</p>
+                    <a class="btn btn-default boton pull-right" href="#">Registrate aquí</a>
+                    <div class="clearfix"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+    <div id="popup2" class="modal-box">
+        <header> <a href="#" class="js-modal-close close">×</a>
+        </header>
+        <div class="modal-body">
+            <form class="formulario" method="post">
+                <div class="forms">
+                    <p>Para tu registro es necesario llenar el siguiente campo:</p>
+                </div>
+                <div class="input-group forms">
+                    <span class="input-group-addon addon"><i class="fa fa-envelope-o fa-fw"></i></span>
+                    <input class="form-control" type="text" placeholder="Correo electrónico">
+                </div><div class="forms">
+                    <a class="btn btn-default boton pull-right" style="padding: 5px 30px;" href="#">Enviar</a>
+                    <div class="clearfix"></div>
+                </div>
+                <div class="forms2">
+                    <p class="p-inline">Busca en tu buzón de entrada el correo para completar tu registro.</p>
+                    <i class="fa fa-envelope-o pull-right" aria-hidden="true"></i>
+                    <div class="clearfix"></div>
+                </div>
+            </form>
+        </div>
+    </div>
+
+  	<section class="contacto">
+		<div class="container">
+			<div class="row">
+				<div class="col-lg-12">
+					<div class="caja-contacto">
+						<h2 class="h2-contacto">
+							Deseamos que tengas la mejor experiencia de viaje.
+						</h2>
+						<p class="p-contacto">
+							Si tienes algún comentario o duda, nos gustará mucho poder ayudarte.
+						</p>
+						<p class="p-contacto-orange">
+							Por favor, llena los siguientes campos:
+						</p>
+						<form class="formulario-contacto" method="post">
+			                <div class="col-md-6">
+			                	<div class="">
+				                    <span class=""><i class="fa fa-user fa-fw"></i></span>
+				                    <input class="" type="text" placeholder="Nombre">
+				                </div>
+			                </div>
+			                <div class="col-md-6">
+			                	<div class="">
+				                    <span class=""><i class="fa fa-user fa-fw"></i></span>
+				                    <input class="" type="text" placeholder="Apellidos">
+				                </div>
+			                </div>
+			                <div class="col-md-8">
+			                	<div class="">
+				                    <span class=""><i class="fa fa-envelope-o fa-fw"></i></span>
+				                    <input class="" type="text" placeholder="Correo electrónico">
+				                </div>
+			                </div>
+			                <div class="col-md-4">
+			                	<div class="">
+				                    <span class=""><i class="fa fa-phone fa-fw"></i></span>
+				                    <input class="" type="text" placeholder="Teléfono">
+				                </div>
+			                </div>
+			                <div class="col-md-8">
+			                	<div class="">
+				                    <input class="" type="text" placeholder="">
+				                </div>
+			                </div>
+			                <div class="col-md-4">
+			                	<div class="">
+				                    ¿Prefieres llamar?<br>
+				                    5283 1025
+				                </div>
+			                </div>
+			                <div class="col-md-12">
+				                <div class="">
+				                    <textarea class="" id="" name="" placeholder="Tus comentarios o dudas."></textarea>
+				                </div>
+			                </div>
+			                <div class="col-md-4">
+			                	Regresar
+			                </div>
+			                <div class="col-md-4">
+			                	<!--Funciona en VSL solamente <div class="g-recaptcha" data-sitekey="6Le17SMUAAAAAB0xTK9zwHggWs01IsgCISrRyqpj"></div> -->
+			                	<!--Funciona en Saits solamente-->
+			                	<div class="g-recaptcha" data-sitekey="6Lc07iMUAAAAALGAf932hgBCzw9H0WS9E8qrVKt-"></div>
+			                	<!--/Funciona en Saits solamente-->
+			            	</div>
+			                <div class="col-md-4">
+			                	<a href=""><button class="btn btn-lg btn-error">
+			                		Enviar
+			                	</button></a>
+			                </div>
+			            </form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+    <hr>
+    <footer>
+        <div class="container">
+            <div class="footer-top">
+                <ul class="foot">
+                    <li><a href="#">Preguntas frecuentes</a></li>
+                    <li><a href="#">Avisos de privacidad</a></li>
+                    <li><a href="#">Términos y condiciones</a></li>
+                </ul>
+                <div class="logo-foot"><a href=""><img class="img-responsive" src="img/logo.png" alt="logo"></a></div>
+            </div>
+            <div class="footer-bottom">
+                <hr>
+                <div class="col-md-12">
+                    <p class="text-center">© Derechos Reservados. 2017</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <!-- jQuery -->
+    <script src="js/jquery.js"></script>
+    <!-- Bootstrap Core JavaScript -->
+    <script src="js/bootstrap.min.js"></script>
+    <!-- Menu JavaScript -->
+    <script src="js/menu.js"></script>
+    <!-- Carousel JavaScript -->
+    <script src="js/flickity-docs.min.js"></script>
+    <!-- Varios JavaScript -->
+    <script src="js/main.js"></script>
+</body>
+</html>

@@ -185,7 +185,7 @@ header nav ul li {
   position: relative;
 }
  
-header nav ul li a:hover {
+header nav ul li a:hover, header nav ul li a:focus {
   background: #f58622;
   border: solid 1px #f58622;
   color: #fff;
@@ -331,6 +331,176 @@ header nav ul li a span {
       color: #fff;
    }
 }
+
+.modal-box {
+  display: none;
+  position: fixed;
+  z-index: 1000;
+  width: 98%;
+  background: white;
+  border-bottom: 1px solid #aaa;
+  border-radius: 4px;
+  box-shadow: 0 3px 9px rgba(0, 0, 0, 0.5);
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  background-clip: padding-box;
+}
+@media (min-width: 50em) {
+
+.modal-box { width: 40%; }
+}
+
+.modal-box header,
+.modal-box .modal-header {
+  padding: 1.25em 1.5em;
+}
+
+.modal-box header h3,
+.modal-box header h4,
+.modal-box .modal-header h3,
+.modal-box .modal-header h4 { margin: 0; }
+
+.modal-box .modal-body { padding: 2em 1.5em; }
+
+.modal-box footer,
+.modal-box .modal-footer {
+  padding: 1em;
+  border-top: 1px solid #ddd;
+  background: rgba(0, 0, 0, 0.02);
+  text-align: right;
+}
+
+.modal-overlay {
+  opacity: 0;
+  filter: alpha(opacity=0);
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 900;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.9) !important;
+}
+
+a.close {
+  line-height: 1;
+  font-size: 3em;
+  position: absolute;
+  top: 0;
+  right: 2%;
+  text-decoration: none;
+  color: #bbb;
+}
+
+a.close:hover {
+  color: #808284;
+  -webkit-transition: color 1s ease;
+  -moz-transition: color 1s ease;
+  transition: color 1s ease;
+}
+
+.forms {
+  margin-top: 10px;
+}
+
+.forms2 {
+  color: #fff;
+  background: #07939e;
+  margin-top: 10px;
+  padding: 10px;
+}
+
+.forms2 i {
+  font-size: 20px;
+  padding: 15px 20px 0 0;
+}
+
+.boton, .boton:visited, .boton:active {
+  color:#07939e;
+  font-family: 'Muli-light', sans-serif;
+  border: solid 1px #07939e;
+    font-family: 'Muli-light', sans-serif;
+    -webkit-transition:all 500ms ease;
+    -o-transition:all 500ms ease;
+    transition:all 500ms ease;
+}
+
+.boton:hover {
+  background: #f58622;
+  border: solid 1px #f58622;
+  color: #fff;
+  text-decoration: none;
+}
+
+.boton-f, .boton-f:visited, .boton-f:active {
+  color:#fff;
+  background: #345d9d;
+  font-family: 'Muli-light', sans-serif;
+  border: solid 1px #345d9d;
+    font-family: 'Muli-light', sans-serif;
+    -webkit-transition:all 500ms ease;
+    -o-transition:all 500ms ease;
+    transition:all 500ms ease;
+}
+
+.boton-f:hover {
+  background: #345d9d;
+  border: solid 1px #345d9d;
+  color: #fff;
+  text-decoration: none;
+}
+
+.enlace, .enlace:visited, .enlace:active {
+  color:#07939e;
+  font-family: 'Muli-light', sans-serif;
+    font-family: 'Muli-light', sans-serif;
+    -webkit-transition:all 500ms ease;
+    -o-transition:all 500ms ease;
+    transition:all 500ms ease;
+    margin-top: -7px;
+}
+
+.enlace:hover {
+  color: #f58622;
+}
+
+.p-inline {
+  display: inline-block;
+  width: 70%;
+}
+
+.addon {
+  background: #fff;
+}
+
+.forms input::-webkit-input-placeholder {
+  color: #58585b;
+  text-align: center;
+}
+.forms input::-moz-placeholder {
+  color: #58585b;
+  text-align: center;
+}
+.forms input::-ms-input-placeholder { 
+  color: #58585b;
+  text-align: center;
+}
+
+.forms label {
+  font-family: 'Muli-light', sans-serif;
+}
+
+input[type=checkbox] { display:none; } /* to hide the checkbox itself */
+input[type=checkbox] + label:before {
+  font-family: FontAwesome;
+  display: inline-block;
+}
+
+input[type=checkbox] + label:before { content: "\f096"; } /* unchecked icon */
+input[type=checkbox] + label:before { letter-spacing: 10px; } /* space between checkbox and label */
+
+input[type=checkbox]:checked + label:before { content: "\f046"; } /* checked icon */
+input[type=checkbox]:checked + label:before { letter-spacing: 10px; } /* allow space for check mark */
+
 
 /*************************
 ********Slider**********
@@ -478,11 +648,11 @@ input.cal::-webkit-input-placeholder {
   color: #a7a9ab;
   font-size: 14px;
 }
-input.cal:-moz-placeholder {
+input.cal::-moz-placeholder {
   color: #a7a9ab; 
   font-size: 14px;
 }
-input.cal:-ms-input-placeholder { 
+input.cal::-ms-input-placeholder { 
   color: #a7a9ab; 
   font-size: 14px;
 }
@@ -600,6 +770,13 @@ input.cal:-ms-input-placeholder {
   .vacaciones p {
     font-size: 14px;
     padding-left: 0;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  
+  .vacaciones {
+    margin-top: 0;
   }
 }
 
@@ -736,8 +913,8 @@ input.cal:-ms-input-placeholder {
   }
 
   .logo-foot img {
-    width: 100%;
-  }
+  width: 100%;
+}
 }
 
 /********** CSS ERROR **********/
@@ -853,7 +1030,9 @@ input.cal:-ms-input-placeholder {
 
 /********** CSS CONTACTO **********/
 .contacto {
-
+  background-image: url(../img/contacto/contacto-bg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 @media screen and (max-width: 1000px) {
